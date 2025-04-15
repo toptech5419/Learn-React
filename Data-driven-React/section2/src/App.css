@@ -1,0 +1,151 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  margin: 45px 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 55px;
+  animation: fadeIn 1s ease-in;
+}
+
+header > img {
+  width: 24px;
+  margin-right: 7px;
+  transition: transform 0.3s ease;
+}
+
+header:hover > img {
+  transform: rotate(360deg);
+}
+
+header > h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+article.journal-entry {
+  display: flex;
+  margin-bottom: 36px;
+  animation: fadeInUp 1s ease-in;
+  transition: transform 0.3s ease;
+}
+
+article.journal-entry:hover {
+  transform: scale(1.02);
+}
+
+article.journal-entry .marker {
+  width: 7px;
+  margin-right: 4px;
+  transition: transform 0.3s ease;
+}
+
+article.journal-entry:hover .marker {
+  transform: translateY(-2px);
+}
+
+article.journal-entry .main-image-container {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-right: 19px;
+  transition: transform 0.3s ease;
+}
+
+article.journal-entry .main-image-container:hover {
+  transform: scale(1.05);
+}
+
+article.journal-entry .main-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container span.country {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+  color: #333;
+}
+
+.info-container a {
+  color: #333;
+  font-size: 0.7rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-container a:hover {
+  color: #007AFF;
+}
+
+.info-container a:visited {
+  color: #918E9B;
+}
+
+.info-container h2.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.info-container p.trip-dates {
+  font-weight: bold;
+  color: #333;
+}
+
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
