@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s06ivf6",
-  "description": "https://scrimba.com/learn-react-c0e/~0vs",
+  "name": "chef",
+  "description": "Gemini-Chef",
   "scripts": {
     "start": "vite",
     "dev": "vite",
